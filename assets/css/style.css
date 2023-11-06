@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+
+header {
+    background-color: aqua;
+}
+
+nav ul li {
+    border-inline-color: blue;
+}
