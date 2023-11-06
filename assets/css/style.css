@@ -1,13 +1,58 @@
+:root {
+    background-color: rgb(250, 237, 217);
+    margin: 0
+
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: purple;
+    
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(80, 78, 78);
+
+
 }
 
-nav ul li {
-    border-inline-color: blue;
+header h1 {
+    background-color: rgb(71, 169, 161);
+    display: inline-block;
+    color: rgb(80, 78, 78);
+    
+      
+}
+
+div ul li {
+    font-size: 18px;
+    display: inline;
+
+}
+
+.info {
+    display: inline-block;
+
+}
+h2 ul li {
+    display: block;
+
+    
+
+}
+
+ul {
+    list-style: none;
+}
+
+.wood {
+    background-image: url("../images/02-hero-bg.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+
+.nav {
+    text-align: right;
+    float: right;
+    padding-top: 15px;
+    
 }
