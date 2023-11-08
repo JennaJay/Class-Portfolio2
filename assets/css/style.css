@@ -9,14 +9,12 @@ html {
 }
 
 main {
+    display: grid;
     margin-left: 200px;
 }
 
 header {
     background-color: rgb(80, 78, 78);
-    
-
-
 }
 
 header h1 {
@@ -24,13 +22,12 @@ header h1 {
     display: inline-block;
     color: rgb(80, 78, 78);
     font-size: 40px;
-    
-    
-      
+     
 }
 
 h2 {
     font-size: 34px;
+    text-align: ;
 }
 
 div ul li {
@@ -40,27 +37,43 @@ div ul li {
 
 }
 
-h4 {
-    font-size: small;
-}
-
-.info {
-    display: inline-block;
-
-}
-
-h2 ul li {
-
-}
-
 ul {
     list-style: none;
-    display: inline inline-block
+    display: inline-block
 }
 
 footer {
     text-align: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border-style: solid grey;
+    border: 2px;
+}
+
+.main1 {
+    font-size: 18px;
+    display: flex;
+}
+
+.main2 {
+    font-size: small;
+}
+
+.info {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 150px auto;
+    grid-gap: 10px;
+    border-left: solid 2px;
+    border-color: rgb(162, 233, 227);
+    margin-top: 25px;
+    padding-left: 15px;
+
+}
+
 .wood {
     background-image: url("../images/02-hero-bg.jpg");
     height: 200px;
@@ -71,22 +84,10 @@ footer {
 .nav {
     text-align: right;
     padding: 17px;
-    
 }
 
 .names {
     text-align:left
 }
 
-.imgsurf {
-    background-image: url("../images/02-portfolio-4_720.jpg");
-    max-height: 150px;
-    background-size: 100;
-    
 
-}
-
-.card {
-    border: 3px solid rgb(162, 233, 227);
-    padding: 1rem;
-}
