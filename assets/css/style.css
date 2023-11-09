@@ -22,12 +22,15 @@ header h1 {
     display: inline-block;
     color: rgb(80, 78, 78);
     font-size: 40px;
+    text-align: left;
      
 }
 
 h2 {
     font-size: 34px;
     text-align: right;
+    padding: 7%;
+    border-right: 2px;
 }
 
 div ul li {
@@ -37,9 +40,14 @@ div ul li {
 
 }
 
+h2 ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style: none;
-    display: inline-block
 }
 
 footer {
@@ -49,10 +57,10 @@ footer {
 .info {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    border: 2px;
     margin-top: 25px;
     padding-left: 15px;
-
+    align-content: space-around;
+    align-content: space-between;
 }
 .first {
     grid-column-start: 1;
@@ -62,7 +70,48 @@ footer {
     grid-column-start: 2;
     grid-column-end: 6;
     text-wrap: center;
-    
+    background-image: url("../images/02-portfolio-4_720.jpg");
+    border-color: rgb(162, 233, 227);
+    border-style: solid;
+    padding: 1%;
+    background-size: cover;
+}
+
+.container2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: url("../images/02-portfolio-1_720.jpg");
+    border-style: solid;
+    background-color: rgb(162, 233, 227);
+    padding: 1%;
+
+}
+
+.container3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-image: url("../images/02-portfolio-2_720.jpg");
+    border-style: solid;
+    border-color: rgb(162, 233, 227);
+    padding: 1%;
+}
+
+.container4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: url("../images/02-portfolio-3_720.jpg");
+    border-style: solid;
+    border-color: rgb(162, 233, 227);
+    padding: 1%;
+}
+
+.container5 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-image: url("../images/02-run-buddy_720.jpg");
+    border-style: solid;
+    border-color: rgb(162, 233, 227);
+    padding:0dvh 1%;
 }
 
 .graph {
@@ -75,10 +124,11 @@ footer {
 
 .main1 {
     font-size: 18px;
+    text-align: left;
 }
 
-.main2 {
-    font-size: small;
+.main3 {
+    font-size: 18px;
 }
 
 
@@ -88,6 +138,7 @@ footer {
     width: 100%;
     background-size: cover;
     text-align: end;
+    color:rgb(250, 237, 217)
 }
 
 .nav {
@@ -95,9 +146,6 @@ footer {
     padding: 17px;
 }
 
-.names {
-    text-align: center;
-}
 
 .img {
     height: 100%;
