@@ -10,7 +10,7 @@ html {
 
 main {
     display: grid;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 header {
@@ -27,7 +27,7 @@ header h1 {
 
 h2 {
     font-size: 34px;
-    text-align: ;
+    text-align: right;
 }
 
 div ul li {
@@ -46,39 +46,48 @@ footer {
     text-align: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    border-style: solid grey;
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     border: 2px;
+    margin-top: 25px;
+    padding-left: 15px;
+
+}
+.first {
+    grid-column-start: 1;
+}
+
+.container1 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-wrap: center;
+    
+}
+
+.graph {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-wrap: center;
+    padding: 4px;
+
 }
 
 .main1 {
     font-size: 18px;
-    display: flex;
 }
 
 .main2 {
     font-size: small;
 }
 
-.info {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 150px auto;
-    grid-gap: 10px;
-    border-left: solid 2px;
-    border-color: rgb(162, 233, 227);
-    margin-top: 25px;
-    padding-left: 15px;
-
-}
 
 .wood {
     background-image: url("../images/02-hero-bg.jpg");
     height: 200px;
     width: 100%;
     background-size: cover;
+    text-align: end;
 }
 
 .nav {
@@ -87,7 +96,10 @@ footer {
 }
 
 .names {
-    text-align:left
+    text-align: center;
 }
 
-
+.img {
+    height: 100%;
+    width: fit-content;
+}
