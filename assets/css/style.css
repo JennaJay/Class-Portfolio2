@@ -48,6 +48,7 @@ h2 ul li {
 
 ul {
     list-style: none;
+    
 }
 
 footer {
@@ -56,11 +57,12 @@ footer {
 
 .info {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2fr 1fr 1fr 1.5fr;
     margin-top: 25px;
+    margin-right: 50px;
     padding-left: 15px;
-    align-content: space-around;
-    align-content: space-between;
+    grid-gap: 0.5rem
 }
 .first {
     grid-column-start: 1;
@@ -150,4 +152,22 @@ footer {
 .img {
     height: 100%;
     width: fit-content;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .info{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1.5fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1.2fr;
+        grid-template-areas:
+        "first"
+        "graph"
+        "first"
+        "container1"
+        "container2"
+        "container3"
+        "container4"
+        "container5"
+        "first";
+    }
 }
